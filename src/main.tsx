@@ -5,7 +5,7 @@ import App from "./App";
 import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ScrollToTop } from "./components";
+import { ScrollToTop } from "./utils";
 import "./translations/i18n";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
