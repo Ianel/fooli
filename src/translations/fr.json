@@ -1,0 +1,111 @@
+{
+    "general": {
+        "apply": "Postuler",
+        "applyNow": "Postuler maintenant",
+        "readOffer": "Voir le poste",
+        "research": "Rechercher",
+        "popular": "Populaires",
+        "recentOffers": "Offres récentes",
+        "seeMore": "Voir plus",
+        "offer": "Poste",
+        "interested": "Cette offre vous tente ?",
+        "fullname": "Nom et prénom",
+        "phoneNumber": "Téléphone",
+        "email": "Email",
+        "birthday": "Naissance",
+        "location": "Adresse",
+        "edit": "Modifier",
+        "experiences": "Expériences professionnelles",
+        "skills": "Compétences",
+        "add": "Ajouter",
+        "welcome": "Bienvenue",
+        "or": "Ou",
+        "send": "Envoyer",
+        "back": "Retour",
+        "applicant": "Candidat"
+    },
+    "navbar": {
+        "offers": "Offres d'emploi",
+        "publishOffer": "Publier une offre",
+        "message": "Message",
+        "notifications": "Notifications"
+    },
+    "hero": {
+        "location": "Entrer une adresse",
+        "search": "Faire une recherche"
+    },
+    "filters": {
+        "filter": "Filtre",
+        "contract": "Contrat",
+        "contracts": {
+            "CDD": "CDD",
+            "CDI": "CDI",
+            "internship": "Stage",
+            "freelance": "Freelance"
+        },
+        "category": "Catégories",
+        "categories": {
+            "CS": "Informatique",
+            "trade": "Commerce et Marketing",
+            "catering": "Restauration",
+            "logistic": "Logistique",
+            "tourism": "Tourisme",
+            "accounting": "Comptabilité",
+            "administration": "Administration"
+        },
+        "recruiter": "Employeur",
+        "recruiters": {
+            "person": "Individuel",
+            "society": "Société"
+        }
+    },
+    "offerDetails": {
+        "aboutCompany": "A propos de l'entreprise",
+        "description": "Description du poste",
+        "context": "Contexte du poste",
+        "duties": "Responsabilités majeures",
+        "activities": "Principales activités",
+        "skills": "Compétences requises"
+    },
+    "profile": {
+        "changePhoto": "Changer la photo",
+        "location": "Adresse",
+        "phoneNumber": "Numéro de téléphone",
+        "birthdate": "Date de naissance",
+        "general": {
+            "heading": "Générale"
+        }
+    },
+    "login": {
+        "heading": "Connexion",
+        "password": "Mot de passe",
+        "username": "Email ou nom d'utilisateur",
+        "placeholderEmail": "Votre email",
+        "createAccount": "Créer un compte",
+        "forgotPassword": "Mot de passe oublié ?",
+        "errorLogin": "Verifier votre email ou mot de passe",
+        "reset": {
+            "heading": "Entrer votre email et nous vous enverrons un lien pour modifier votre mot de passe",
+            "changePassword": "Changer le mot de passe",
+            "newPassword": "Nouveau mot de passe",
+            "confirmPassword": "Confirmer le mot de passe",
+            "enterPassword": "Entrer un mot de passe",
+            "enterPasswordAgain": "Entrer à nouveau le mot de passe",
+            "checkMail": "Voir mon email",
+            "headingMailOne": "Nous avons envoyé un lien à l'adresse",
+            "headingMailTwo": " pour réinitialiser votre mot de passe."
+        }
+    },
+    "register": {
+        "heading": "Inscription",
+        "lastname": "Nom",
+        "firstname": "Prénom",
+        "accountHeading": "Sélectionner un type de compte",
+        "recruter": "Recruteur",
+        "conditions": "J'accepte les conditions d'utilisation",
+        "signUp": "S'inscrire",
+        "confirm": {
+            "headingMail": "Nous avons envoyé un lien de confirmation à l'adresse"
+        }
+    }
+}
