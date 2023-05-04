@@ -17,6 +17,10 @@ const FormationCard: React.FC<IFormation> = ({
     syllabus,
 }) => {
     const [statusColor, setStatusColor] = useState("bg-blue-500");
+    let MGA = new Intl.NumberFormat("mg", {
+        style: "currency",
+        currency: "MGA",
+    });
 
     useEffect(() => {
         switch (status) {
@@ -51,7 +55,7 @@ const FormationCard: React.FC<IFormation> = ({
             </div>
             <h2 className="font-bold text-2xl my-4">{title}</h2>
             <div className="flex justify-between items-center my-3">
-                <h3 className="bg-pink-400 text-white px-4 py-1 rounded-lg">
+                <h3 className="bg-zinc-800 text-white px-4 py-1 rounded-lg">
                     {isOnline ? "En ligne" : "Présentiel"}
                 </h3>
                 <h3 className="flex gap-3 items-center">
@@ -76,7 +80,9 @@ const FormationCard: React.FC<IFormation> = ({
                     <span>Google Meet</span>
                 </div>
             )}
-            <h4 className="text-2xl font-bold text-center my-8">{price} MGA</h4>
+            <h4 className="text-2xl font-bold text-center my-8">
+                {MGA.format(price)}
+            </h4>
             <div className="mb-4">
                 <h5>Ce que vous saurez faire:</h5>
                 <div>
