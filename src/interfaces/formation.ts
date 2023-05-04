@@ -1,4 +1,5 @@
 export type IFormation = {
+    id: number;
     title: string;
     isOnline: boolean;
     date: string;

@@ -1,5 +1,6 @@
 export const formations = [
     {
+        id: 1,
         title: "Node JS: Introduction aux microservices",
         isOnline: false,
         date: "24/04/2023",
@@ -16,6 +17,7 @@ export const formations = [
         ],
     },
     {
+        id: 2,
         title: "Golang",
         isOnline: true,
         date: "12/05/2023",
@@ -32,6 +34,7 @@ export const formations = [
         ],
     },
     {
+        id: 3,
         title: "Node JS: Introduction aux microservices",
         isOnline: false,
         date: "24/04/2023",
@@ -48,6 +51,7 @@ export const formations = [
         ],
     },
     {
+        id: 4,
         title: "Node JS: Introduction aux microservices",
         isOnline: false,
         date: "24/04/2023",
@@ -64,6 +68,7 @@ export const formations = [
         ],
     },
     {
+        id: 5,
         title: "Node JS: Introduction aux microservices",
         isOnline: false,
         date: "24/04/2023",
@@ -80,6 +85,7 @@ export const formations = [
         ],
     },
     {
+        id: 6,
         title: "Node JS: Introduction aux microservices",
         isOnline: false,
         date: "24/04/2023",

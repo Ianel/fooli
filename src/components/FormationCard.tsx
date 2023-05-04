@@ -1,4 +1,5 @@
 import { IFormation } from "@/interfaces/formation";
+import { checkStatusColor } from "@/utils/checkStatusColor";
 import React, { useEffect, useState } from "react";
 import {
     FaCalendarAlt,
@@ -6,6 +7,7 @@ import {
     FaGlobe,
     FaMapMarkerAlt,
 } from "react-icons/fa/index";
+import primaryStates from "@/states";
 
 const FormationCard: React.FC<IFormation> = ({
     title,
@@ -16,39 +18,26 @@ const FormationCard: React.FC<IFormation> = ({
     price,
     syllabus,
 }) => {
-    const [statusColor, setStatusColor] = useState("bg-blue-500");
     let MGA = new Intl.NumberFormat("mg", {
         style: "currency",
         currency: "MGA",
     });
+    const [localStatus, setLocalStatus] = useState("");
 
     useEffect(() => {
-        switch (status) {
-            case "scheduled":
-                setStatusColor("bg-green-500");
-                break;
-            case "canceled":
-                setStatusColor("bg-red-500");
-                break;
-            case "reported":
-                setStatusColor("bg-orange-500");
-                break;
-            default:
-                setStatusColor("bg-blue-500");
-                break;
-        }
+        setLocalStatus(checkStatusColor(status));
     }, []);
 
     return (
         <section className="shadow-md p-8 w-[350px] rounded-lg">
             <div className="flex justify-between">
                 <div className="flex gap-4 items-start">
-                    <div className={`w-1 ${statusColor}`}>&nbsp;</div>
-                    <div className={`w-1 ${statusColor}`}>&nbsp;</div>
-                    <div className={`w-1 ${statusColor}`}>&nbsp;</div>
+                    <div className={`w-1 ${localStatus}`}>&nbsp;</div>
+                    <div className={`w-1 ${localStatus}`}>&nbsp;</div>
+                    <div className={`w-1 ${localStatus}`}>&nbsp;</div>
                 </div>
                 <div
-                    className={`${statusColor} text-white px-4 py-2 rounded-lg`}
+                    className={`${localStatus} text-white px-4 py-2 rounded-lg`}
                 >
                     <p>{status[0].toUpperCase() + status.slice(1)}</p>
                 </div>
