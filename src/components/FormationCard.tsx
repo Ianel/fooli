@@ -1,5 +1,6 @@
 import { IFormation } from "@/interfaces/formation";
 import { checkStatusColor } from "@/utils/checkStatusColor";
+import { MGA } from "@/utils/formatCurrency";
 import React, { useEffect, useState } from "react";
 import {
     FaCalendarAlt,
@@ -7,9 +8,10 @@ import {
     FaGlobe,
     FaMapMarkerAlt,
 } from "react-icons/fa/index";
-import primaryStates from "@/states";
+import { useNavigate } from "react-router-dom";
 
 const FormationCard: React.FC<IFormation> = ({
+    id,
     title,
     isOnline,
     date,
@@ -18,11 +20,8 @@ const FormationCard: React.FC<IFormation> = ({
     price,
     syllabus,
 }) => {
-    let MGA = new Intl.NumberFormat("mg", {
-        style: "currency",
-        currency: "MGA",
-    });
     const [localStatus, setLocalStatus] = useState("");
+    let navigate = useNavigate();
 
     useEffect(() => {
         setLocalStatus(checkStatusColor(status));
@@ -85,7 +84,12 @@ const FormationCard: React.FC<IFormation> = ({
                 </div>
             </div>
             <div className="flex flex-col justify-between items-center gap-4 mt-2">
-                <button className="bg-black text-white w-full rounded-lg py-2">
+                <button
+                    onClick={() => {
+                        navigate(`/formation/${id}`);
+                    }}
+                    className="bg-black text-white w-full rounded-lg py-2"
+                >
                     Voir détails
                 </button>
                 <button className="bg-blue-500 text-white w-full rounded-lg py-2">

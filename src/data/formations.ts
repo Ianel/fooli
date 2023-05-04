@@ -5,7 +5,7 @@ export const formations = [
         isOnline: false,
         date: "24/04/2023",
         place: "BFV Ambanidia",
-        status: "scheduled",
+        status: "Scheduled",
         price: 80000,
         syllabus: [
             "Créer des microservices avec Node JS",
@@ -22,7 +22,7 @@ export const formations = [
         isOnline: true,
         date: "12/05/2023",
         place: "BFV Ambanidia",
-        status: "reported",
+        status: "Reported",
         price: 80000,
         syllabus: [
             "Créer des microservices avec Node JS",
@@ -39,7 +39,7 @@ export const formations = [
         isOnline: false,
         date: "24/04/2023",
         place: "BFV Ambanidia",
-        status: "scheduled",
+        status: "Scheduled",
         price: 80000,
         syllabus: [
             "Créer des microservices avec Node JS",
@@ -56,7 +56,7 @@ export const formations = [
         isOnline: false,
         date: "24/04/2023",
         place: "BFV Ambanidia",
-        status: "scheduled",
+        status: "Scheduled",
         price: 80000,
         syllabus: [
             "Créer des microservices avec Node JS",
@@ -73,7 +73,7 @@ export const formations = [
         isOnline: false,
         date: "24/04/2023",
         place: "BFV Ambanidia",
-        status: "scheduled",
+        status: "Scheduled",
         price: 80000,
         syllabus: [
             "Créer des microservices avec Node JS",
@@ -90,7 +90,7 @@ export const formations = [
         isOnline: false,
         date: "24/04/2023",
         place: "BFV Ambanidia",
-        status: "scheduled",
+        status: "Scheduled",
         price: 80000,
         syllabus: [
             "Créer des microservices avec Node JS",
