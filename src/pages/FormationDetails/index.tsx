@@ -11,11 +11,13 @@ import {
     FaMapMarkerAlt,
 } from "react-icons/fa";
 import { MGA } from "@/utils/formatCurrency";
+import usePaymentModal from "@/hooks/usePaymentModal";
 
 const FormationDetails: React.FC = () => {
     const { id } = useParams();
     const [formationDetail, setFormationDetail] = useState({});
     const [localStatus, setLocalStatus] = useState("");
+    const { onOpen } = usePaymentModal();
 
     useEffect(() => {
         let tmpFormation = formations.filter(
@@ -82,7 +84,10 @@ const FormationDetails: React.FC = () => {
                             })}
                     </div>
                 </div>
-                <button className="bg-blue-500 text-white w-full rounded-lg py-2">
+                <button
+                    onClick={onOpen}
+                    className="bg-blue-500 text-white w-full rounded-lg py-2"
+                >
                     Payer
                 </button>
             </section>

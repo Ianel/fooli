@@ -1,3 +1,4 @@
+import usePaymentModal from "@/hooks/usePaymentModal";
 import { IFormation } from "@/interfaces/formation";
 import { checkStatusColor } from "@/utils/checkStatusColor";
 import { MGA } from "@/utils/formatCurrency";
@@ -22,6 +23,7 @@ const FormationCard: React.FC<IFormation> = ({
 }) => {
     const [localStatus, setLocalStatus] = useState("");
     let navigate = useNavigate();
+    const { onOpen } = usePaymentModal();
 
     useEffect(() => {
         setLocalStatus(checkStatusColor(status));
@@ -92,7 +94,10 @@ const FormationCard: React.FC<IFormation> = ({
                 >
                     Voir détails
                 </button>
-                <button className="bg-blue-500 text-white w-full rounded-lg py-2">
+                <button
+                    onClick={onOpen}
+                    className="bg-blue-500 text-white w-full rounded-lg py-2"
+                >
                     Payer
                 </button>
             </div>

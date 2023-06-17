@@ -8,11 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 import { ScrollToTop } from "./utils";
 import "./translations/i18n";
 import MainLayout from "./layouts/MainLayout";
+import ModalProvider from "./providers/ModalProvider";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <React.StrictMode>
         <Router>
             <ScrollToTop>
+                <ModalProvider />
                 <MainLayout>
                     <App />
                 </MainLayout>
