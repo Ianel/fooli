@@ -24,9 +24,9 @@ const Modal: React.FC<ModalProps> = ({
             <Dialog.Portal>
                 <Dialog.Overlay className="z-50 bg-neutral-900/90 backdrop-blur-sm fixed inset-0" />
                 <Dialog.Content
-                    className={`z-50 fixed drop-shadow-md border border-neutral-700 top-[50%] left-[50%] max-h-full h-full md:h-auto md:max-h-[85vh] w-full md:w-[90vw] md:max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-md ${
+                    className={`z-50 fixed drop-shadow-md border border-neutral-700 top-[50%] left-[50%] max-h-full h-full w-full md:max-w-[400px] translate-x-[-50%] translate-y-[-50%] rounded-md ${
                         type === "Menu" ? "bg-pink-200" : "bg-slate-100"
-                    }  p-[25px] focus:outline-none lg:top-0 lg:left-auto lg:right-0 lg:translate-x-0 lg:translate-y-0 lg:h-full lg:max-h-full
+                    }  p-[25px] focus:outline-none md:top-0 md:left-auto md:right-0 md:translate-x-0 md:translate-y-0 md:h-full md:max-h-full
                 `}
                 >
                     <Dialog.Title className="text-xl text-center uppercase font-bold mb-4">

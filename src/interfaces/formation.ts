@@ -1,10 +1,11 @@
 export type IFormation = {
     id: number;
     title: string;
+    subtitle: string;
     isOnline: boolean;
     date: string;
     place: string;
-    status: string;
     price: number;
+    category?: string;
     syllabus: string[];
 };

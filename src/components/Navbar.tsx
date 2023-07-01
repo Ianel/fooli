@@ -22,24 +22,33 @@ const Navbar: React.FC = () => {
                 </Link>
             </div>
             <div className="hidden text-sm lg:flex justify-between items-center gap-6">
-                <div className="cursor-pointer hover:font-semibold hover:text-pink-700 flex items-center gap-2">
+                <Link
+                    to={"/"}
+                    className="cursor-pointer hover:font-semibold hover:text-pink-700 flex items-center gap-2"
+                >
                     <span>
                         <FaHome />
                     </span>
                     <span>Accueil</span>
-                </div>
-                <div className="cursor-pointer hover:font-semibold hover:text-pink-700 flex items-center gap-2">
+                </Link>
+                <Link
+                    to={"/about"}
+                    className="cursor-pointer hover:font-semibold hover:text-pink-700 flex items-center gap-2"
+                >
                     <span>
                         <IoMdPerson />
                     </span>
                     <span>A propos</span>
-                </div>
-                <div className="cursor-pointer hover:font-semibold hover:text-pink-700 flex items-center gap-2">
+                </Link>
+                <Link
+                    to={"/contact"}
+                    className="cursor-pointer hover:font-semibold hover:text-pink-700 flex items-center gap-2"
+                >
                     <span>
                         <FaPhoneAlt />
                     </span>
                     <span>Contact</span>
-                </div>
+                </Link>
             </div>
             <button className="block lg:hidden" onClick={onNavbarOpen}>
                 <FaBars />

@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React from "react";
 
@@ -10,6 +11,7 @@ const MainLayout: React.FC<PageProps> = ({ children }) => {
         <main className="bg-[#F9F9F9]">
             <Navbar />
             <div className="px-5 md:px-10">{children}</div>
+            <Footer />
         </main>
     );
 };
