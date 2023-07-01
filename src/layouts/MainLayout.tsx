@@ -7,9 +7,9 @@ type PageProps = {
 
 const MainLayout: React.FC<PageProps> = ({ children }) => {
     return (
-        <main>
+        <main className="bg-[#F9F9F9]">
             <Navbar />
-            {children}
+            <div className="px-5 md:px-10">{children}</div>
         </main>
     );
 };

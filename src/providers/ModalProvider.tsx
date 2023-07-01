@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import PaymentModal from "@/components/PaymentModal";
+import NavbarModal from "@/components/NavbarModal";
 
 const ModalProvider = () => {
     const [isMounted, setIsMounted] = useState(false);
@@ -10,6 +11,7 @@ const ModalProvider = () => {
     return (
         <>
             <PaymentModal />
+            <NavbarModal />
         </>
     );
 };
