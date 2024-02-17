@@ -1,3 +1,5 @@
+import { bgHero } from "@/assets/images";
+
 export const formations = [
     {
         id: 1,
@@ -8,6 +10,7 @@ export const formations = [
         place: "BFV Ambanidia",
         price: 80000,
         category: "Backend",
+        image: bgHero,
         syllabus: [
             "Créer des microservices avec Node JS",
             "Construire des API REST modulables",
@@ -21,6 +24,7 @@ export const formations = [
         date: "12/05/2023",
         place: "BFV Ambanidia",
         category: "Backend",
+        image: bgHero,
         price: 80000,
         syllabus: ["Variables, boucles, fonctions", "OOP"],
     },
@@ -32,6 +36,7 @@ export const formations = [
         date: "28/05/2023",
         place: "myt-sqg-jik",
         category: "Frontend",
+        image: bgHero,
         price: 80000,
         syllabus: ["Gestion d'états", "Effets de bord", "Cycles de vie"],
     },

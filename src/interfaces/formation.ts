@@ -8,4 +8,5 @@ export type IFormation = {
     price: number;
     category?: string;
     syllabus: string[];
+    status: string;
 };
