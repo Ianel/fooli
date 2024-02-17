@@ -56,11 +56,7 @@ const Courses = () => {
                     .map((course) => {
                         let id = uuidv4();
                         return (
-                            <CourseCard
-                                key={id}
-                                status="upcoming"
-                                {...course}
-                            />
+                            <CourseCard key={id} status="done" {...course} />
                         );
                     })}
             </div>
